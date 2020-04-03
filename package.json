@@ -1,0 +1,21 @@
+{
+  "name": "fifciuu",
+  "version": "1.0.0",
+  "description": "My majestic Nuxt.js project",
+  "author": "Fifciuu",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "ant-design-vue": "^1.1.10",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0"
+  }
+}
