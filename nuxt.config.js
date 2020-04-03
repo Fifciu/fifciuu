@@ -33,7 +33,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'ant-design-vue/dist/antd.css'
+    'ant-design-vue/docs/antd.css'
   ],
   /*
   ** Plugins to load before mounting the App
