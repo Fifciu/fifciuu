@@ -51,7 +51,7 @@ export default Vue.extend({
           title: 'Nuxt'
         },
         {
-          src: require('~/assets/vsf.webp'),
+          src: require('~/assets/vsf.png'),
           title: 'Vue Storefront'
         },
         {
