@@ -2,7 +2,7 @@ const description = "Fast-growing frontend & backend developer\'s website."
 const title = 'Fifciuu - Filip Jędrasik'
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
