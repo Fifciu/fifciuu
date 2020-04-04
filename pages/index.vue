@@ -1,31 +1,36 @@
 <template>
   <div class="container">
-    <div>
-      <h2 class="subheader-1">
-        Hi! I am
-      </h2>
-      <h1 class="title">
-        Fifciuu
-      </h1>
-      <h3 class="subheader-2">
-        I am website's programmist, Vue Storefront expert.
-      </h3>
-      <div class="skills">
-        <div
-          class="skill-wrapper"
-          v-for="skill in skills"
-          :key="skill.src"
-        >
-          <img
-            :src="skill.src"
-            :alt="skill.title"
-            class="skill"
-          />
+    <div class="intro flex-center fullheight">
+      <div>
+        <h2 class="subheader-1">
+          Hi! I am
+        </h2>
+        <h1 class="title">
+          Fifciuu
+        </h1>
+        <h3 class="subheader-2">
+          I am website's programmist, Vue Storefront expert.
+        </h3>
+        <div class="skills">
+          <div
+            class="skill-wrapper"
+            v-for="skill in skills"
+            :key="skill.src"
+          >
+            <img
+              :src="skill.src"
+              :alt="skill.title"
+              class="skill"
+            />
+          </div>
         </div>
+        <h4 class="subheader-4">
+          You can contact with me via email: <a href="mailto: filip.jdrasik@gmail.com">filip.jdrasik@gmail.com</a>
+        </h4>
       </div>
-      <h4 class="subheader-4">
-        You can contact with me via email: <a href="mailto: filip.jdrasik@gmail.com">filip.jdrasik@gmail.com</a>
-      </h4>
+    </div>
+    <div class="projects fullheight">
+      aaa
     </div>
   </div>
 </template>
@@ -72,12 +77,23 @@ export default Vue.extend({
 </script>
 
 <style>
+
+  .fullheight {
+    min-height: 100vh;
+  }
+
+  .intro {
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -85,7 +101,7 @@ export default Vue.extend({
 .title {
   display: block;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 70px;
   color: #35495e;
   letter-spacing: 1px;
   margin-bottom: 0;
@@ -93,7 +109,7 @@ export default Vue.extend({
 
 .subheader-1 {
    font-weight: 300;
-   font-size: 42px;
+   font-size: 34px;
    color: #526488;
    word-spacing: 5px;
    margin-bottom: -15px;
@@ -101,15 +117,7 @@ export default Vue.extend({
 
 .subheader-2 {
   font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  margin-top: -15px;
-}
-
-.subheader-3 {
-  font-weight: 300;
-  font-size: 32px;
+  font-size: 26px;
   color: #526488;
   word-spacing: 5px;
   margin-top: -15px;
@@ -117,19 +125,42 @@ export default Vue.extend({
 
 .subheader-4 {
   font-weight: 300;
-  font-size: 25px;
+  font-size: 16px;
   color: #526488;
   margin-top: 15px;
 }
 
   .skills {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   .skill {
+    height: 50px;
+    padding: 3px;
+  }
+
+@media screen and (min-width: 980px) {
+  .title {
+    font-size: 100px;
+  }
+  .subheader-1 {
+    font-size: 42px;
+  }
+  .subheader-2 {
+    font-size: 42px;
+  }
+  .skills {
+    flex-wrap: nowrap;
+  }
+  .skill {
     height: 90px;
     padding: 0 10px;
   }
+  .subheader-4 {
+    font-size: 25px;
+  }
+}
 
 </style>
