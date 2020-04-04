@@ -6,6 +6,9 @@ export default {
   /*
   ** Headers of the page
   */
+  generate: {
+    dir: 'docs'
+  },
   head: {
     title: title,
     meta: [
@@ -21,8 +24,7 @@ export default {
       { property: 'og:site_name', content: title },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap', rel: 'stylesheet' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -33,7 +35,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'ant-design-vue/docs/antd.css'
+    'ant-design-vue/dist/antd.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -46,6 +48,13 @@ export default {
   */
   buildModules: [
     '@nuxt/typescript-build',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-80868902-7',
+      debug: {
+        enabled: true,
+        sendHitTask: true
+      }
+    }]
   ],
   /*
   ** Nuxt.js modules
@@ -53,6 +62,13 @@ export default {
   modules: [
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    manifest: {
+      name: title,
+      lang: 'en',
+
+    }
+  },
   /*
   ** Build configuration
   */
