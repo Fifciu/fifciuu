@@ -15,6 +15,27 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  background-color: #fff;
+  font-feature-settings: "tnum","tnum";
+}
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  transition: color .3s;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #40a9fe;
+}
+
 *,
 *:before,
 *:after {

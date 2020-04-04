@@ -29,9 +29,9 @@
         </h4>
       </div>
     </div>
-    <div class="projects fullheight">
-      aaa
-    </div>
+<!--    <div class="projects fullheight">-->
+<!--      aaa-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -82,8 +82,8 @@ export default Vue.extend({
     min-height: 100vh;
   }
 
-  .intro {
-  }
+  /*.intro {*/
+  /*}*/
 
   .flex-center {
     display: flex;
@@ -121,6 +121,7 @@ export default Vue.extend({
   color: #526488;
   word-spacing: 5px;
   margin-top: -15px;
+  margin-bottom:  .5em;
 }
 
 .subheader-4 {
@@ -128,6 +129,7 @@ export default Vue.extend({
   font-size: 16px;
   color: #526488;
   margin-top: 15px;
+  margin-bottom:  .5em;
 }
 
   .skills {
