@@ -24,7 +24,8 @@ export default {
       { property: 'og:site_name', content: title },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap' }
     ]
   },
   /*
