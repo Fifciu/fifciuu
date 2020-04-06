@@ -17,6 +17,8 @@
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
-    "@nuxtjs/google-analytics": "^2.2.3"
+    "@nuxtjs/google-analytics": "^2.2.3",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
   }
 }

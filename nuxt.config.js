@@ -25,7 +25,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap' }
+      { rel: 'preload', href: '//fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap', as: 'style' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap' }
     ]
   },
   /*
@@ -43,6 +44,7 @@ export default {
   */
   plugins: [
     // '@/plugins/antd-ui'
+    '@/assets/sass/main.scss'
   ],
   /*
   ** Nuxt.js dev-modules

@@ -95,7 +95,6 @@ export default Vue.extend({
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
   padding: 0 15px;
 }
 
