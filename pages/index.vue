@@ -9,8 +9,11 @@
           Fifciuu
         </h1>
         <h3 class="subheader-2">
-          I am website's programmist, Vue Storefront expert.
+          I am a Webdeveloper
         </h3>
+        <h4 class="subheader-4" style="margin-top: -10px">
+          Currently, working as a <strong>Tech Leader</strong> @ <a href="https://www.vuestorefront.io/" target="_blank">Vue Storefront</a>
+        </h4>
         <div class="skills">
           <div
             class="skill-wrapper"
