@@ -2,7 +2,7 @@ const description = "Fast-growing frontend & backend developer\'s website."
 const title = 'Fifciuu - Filip Jędrasik'
 
 export default {
-  mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -25,8 +25,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700', as: 'style' },
-      // { rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap', media: 'print', onload: "this.media='all'" }
+      { rel: 'preload', href: '//fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700', as: 'style' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700' }
     ]
   },
   /*
